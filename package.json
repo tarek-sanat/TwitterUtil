@@ -1,0 +1,19 @@
+{
+  "name": "twitter-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarek-sanat/twitterWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarek-sanat/twitterWebsite/issues"
+  },
+  "homepage": "https://github.com/tarek-sanat/twitterWebsite#readme"
+}

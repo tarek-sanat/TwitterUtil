@@ -1,0 +1,24 @@
+
+
+.top{
+    margin-top: 5vh;
+    background-color: #0F161C;
+    width:25%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.image{
+    width:100%
+}
+@media only screen and (max-width: 1000px) {
+    .top{
+        margin-top: 5vh;
+        background-color: #0F161C;
+        width:90%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+
+  }
+
