@@ -7,7 +7,7 @@ function Navbar() {
         <div className="topnav">
                 <a href="/" className="logoLeft" ><FaTwitter/></a>
                 
-                <a href="https://github.com/tarek-sanat/twitterWebsite" target="_blank" rel="noreferrer" className="logoRight"><FaGithub /></a>
+                <a href="https://github.com/tarek-sanat/TwitterUtil" target="_blank" rel="noreferrer" className="logoRight"><FaGithub /></a>
         </div>
     )
 }
