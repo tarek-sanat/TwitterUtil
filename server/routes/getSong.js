@@ -13,6 +13,8 @@ var client = new Twitter({
   access_token_secret: process.env.Twitter_Access_Token_Secret
 });
 
+
+// Gei video Route returns the mp4 link to a video given an ID
 router.get('/twitter', function(req, res, next){
     client.get('statuses/show/',{id:req.query.id, tweet_mode:'extended'}, function(error, tweet, response) {
       try{
@@ -29,6 +31,7 @@ router.get('/twitter', function(req, res, next){
     });
 })
 
+// Find song route, returns the name of the song and other info about the song 
 router.get('/', async function(req, res, next) {
   var data = {
     'url': req.query.url,

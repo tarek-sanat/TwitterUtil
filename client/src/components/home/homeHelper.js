@@ -1,3 +1,5 @@
+
+// Trim string of url to return only ID of video
 function returnID(url){
     const after = url.substring(url.indexOf('status/') + 7);
     if(after.charAt(after.length - 1) === '/'){

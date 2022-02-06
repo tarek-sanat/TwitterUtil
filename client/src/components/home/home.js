@@ -42,13 +42,7 @@ function Menu() {
                 setCurrent('URLError')
                 setErr('Unfortunately, the song in the video was not found, Try a different Video!')
             }
-            
-            
-            
         }
-        
-        
-        
     }
 
     // function to download video from twitter

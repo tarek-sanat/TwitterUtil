@@ -1,20 +1,25 @@
 import { useEffect, useState } from "react"
 import './download.css'
 
+// Get the different video sizes available
 function getSizes(menu){
     let url = menu['url']
     let size = url.substring(url.lastIndexOf('/pu/vid/')+8)
     var finalSize= size.substr(0, size.indexOf('/')); 
     return [finalSize, url]
 }
+
+
+
 function Download({menu}){
-    
+    //Keep state of download buttons
     var [download1, setDownload1] = useState(0)
     var [download2, setDownload2] = useState(0)
     var [download3, setDownload3] = useState(0)
     
     useEffect(()=>{
         async function setMenu(){
+            //Set dimensions of each video and their links
             var men = await menu
             for(let i = 0; i < men['data'].length; i++){
                 if(i === 0) setDownload1(getSizes(men['data'][i]))
@@ -26,9 +31,6 @@ function Download({menu}){
         setMenu()
     }, [menu])
 
-  
-    
-    console.log(download3)
     return(
        
         <div className="buttons">
