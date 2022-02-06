@@ -3,7 +3,6 @@ function returnID(url){
     if(after.charAt(after.length - 1) === '/'){
         after.slice(0,-1)
     }
-    console.log(after)
     return after;
 }
 
