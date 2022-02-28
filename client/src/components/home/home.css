@@ -82,8 +82,3 @@
   border-radius:40px 40px 40px 40px;
   outline:none;
 }
-.button:hover{
-  border: 1px solid #c8c8c8;
-  padding: 9px 19px;
-  color:#808080;
-}
