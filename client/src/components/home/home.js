@@ -50,7 +50,7 @@ function Menu() {
         setCurrent('')
         if(search !== ''){
             // make call to backend
-            let response = await axios.get("http://18.119.1.10:9000/getSong/twitter", {params:{id: returnID(search)}})
+            let response = await axios.get("http://localhost:9000/getSong/twitter", {params:{id: returnID(search)}})
             // if tweet found
             if(response['data'] !== 'error tweet not found'){
                 // if we want to download the video
