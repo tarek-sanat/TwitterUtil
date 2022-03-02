@@ -13,17 +13,15 @@ function Menu() {
     var [songInfo, setSongInfo] = useState(0)
 
     //Make call to find song, If found display it else display error
+    // Get the video Information Using download function
+    // Get the URL of the video and make API Call to get the name of the song
+    // If song found diaply it else show error
     var findSong = async () => {
         if(search !== '' ){
-            //Get the video from twitter
             let videos = await download('song')
-            //If video from twitter found
             if(videos !== 'notFound'){
-                //get video URL
                 let videoURL = videos['data'][0]['url']
-                //API call to find song name
                 let songName = await axios.get("http://localhost:9000/getSong", {params: {url: videoURL}})
-                //If song not found
                 if(songName['data']['result'] === null || songName['data'] === ''){
                     // set Error message
                     setCurrent('URLError')
@@ -45,21 +43,20 @@ function Menu() {
         }
     }
 
+
+
     // function to download video from twitter
+    // Get Id of given video and make Backend call to API.
+    // If the video is found, Display it, else set Error
     var download = async (type) =>{
         setCurrent('')
         if(search !== ''){
-            // make call to backend
             let response = await axios.get("http://localhost:9000/getSong/twitter", {params:{id: returnID(search)}})
-            // if tweet found
             if(response['data'] !== 'error tweet not found'){
-                // if we want to download the video
                 if(type === 'down'){
-                    //set Parameters to download
                     setCurrent('Download')
                     setErr('')
-                } 
-                //if we just need the information of the video for finsing song
+                }
                 return response;
             } else{
                 setCurrent('URLError')

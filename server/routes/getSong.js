@@ -14,7 +14,9 @@ var client = new Twitter({
 });
 
 
-// Gei video Route returns the mp4 link to a video given an ID
+// Get video Route returns the mp4 link to a video given an ID
+// If the type of the tweet is video, return the video links
+// else throw error
 router.get('/twitter', function(req, res, next){
     client.get('statuses/show/',{id:req.query.id, tweet_mode:'extended'}, function(error, tweet, response) {
       try{
@@ -32,6 +34,9 @@ router.get('/twitter', function(req, res, next){
 })
 
 // Find song route, returns the name of the song and other info about the song 
+// Make API Call to audd.io using the video we get
+// If the song is found, return information about song and its youtube link
+// else return nothing
 router.get('/', async function(req, res, next) {
   var data = {
     'url': req.query.url,

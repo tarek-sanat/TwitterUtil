@@ -1,4 +1,6 @@
 
+
+// For each video available, return an array of different sized available
 function getVideo(tweet){
     let videos = tweet['extended_entities']['media'][0]['video_info']['variants']
       let remove;
