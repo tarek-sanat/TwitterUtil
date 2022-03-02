@@ -2,8 +2,8 @@
 
 ## You Can try this project here: http://d3qft336gglda.cloudfront.net/
 ## Demo
-Video Demo: https://twitter.com/songsfinder/status/1498787344039690246
-Song Demo: https://twitter.com/songsfinder/status/1498789659370995716
+* Video Demo: https://twitter.com/songsfinder/status/1498787344039690246
+* Song Demo: https://twitter.com/songsfinder/status/1498789659370995716
 
 https://user-images.githubusercontent.com/67877258/156274322-bdae4432-9091-454d-ae0c-78c0f1440a1d.mp4
 
