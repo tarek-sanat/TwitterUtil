@@ -4,6 +4,10 @@
 ## Demo
 
 
+https://user-images.githubusercontent.com/67877258/156274322-bdae4432-9091-454d-ae0c-78c0f1440a1d.mp4
+
+
+
 ## Description
 
 This project is a twitter utility tool. It allows users to either download a video from twitter by providing the URL of that post. 
