@@ -19,7 +19,7 @@ It also allows users to find the name of a song present in a video by connecting
 * It is also connected to the Youtube API which will give a YouTube link of the song for the users to be able to view it.
 
 ## Technologies Used
-* This project was built using React (JavaScript) and hosted on AWS S3 for the front-end and on AWS EC2 for the backend.
+* This project was built using React (JavaScript) for the front-end and NodeJS for the backend. It is hosted on AWS S3 for the front-end and on AWS EC2 for the backend.
 
 <div class="row">
   <div class="column">
